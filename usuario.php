@@ -9,51 +9,59 @@
     
 </head>
 <body>
-    
-    <main>
-        <div class="header-content">
-            <h2>Gestão de usuários</h2>
-            <p>Visualize e gerencie as permissões dos usuários do sistema</p>
-        </div>
-
-        <div class="table-responsive">
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nome</th>
-                        <th>Email</th>
-                        <th>Acesso</th>
-                        <th>Status</th>
-                        <th>Ações</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>01</td>
-                        <td>Eric Freitas</td>
-                        <td>eric@unifev.edu.br</td>
-                        <td>Administrador</td>
-                        <td><span class="badge-ativo">Ativo</span></td>
-                        <td><button class="btn-icon"><i class="fa-solid fa-pen"></i></button>
-                            <button class="btn-icon"><i class="fa-solid fa-trash"></i></button>
-                        </td>
-                        
-                    </tr>
-                    <tr>
-                        <td>02</td>
-                        <td>Ana Souza</td>
-                        <td>ana.souza@email.com</td>
-                        <td>Editor</td>
-                        <td><span class="badge-ativo">Ativo</span></td>
-                        <td><button class="btn-icon"><i class="fa-solid fa-pen"></i></button>
-                            <button class="btn-icon"><i class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </main>
-
+    <div class="dashboard-container">
+        <?php include 'menu.php'; ?>
+        
+        <main>
+            <div class="header-content">
+                <h2>Gestão de usuários</h2>
+                <p>Visualize e gerencie as permissões dos usuários do sistema</p>
+            </div>
+            <div class="div-newuser">
+                <a href="cad-usuarios.php"; class="btn-newuser"><i class="fa-solid fa-user-plus"></i></a>    
+            </div>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Acesso</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>Eric Freitas</td>
+                            <td>eric@unifev.edu.br</td>
+                            <td>Administrador</td>
+                            <td><span class="badge ativo">Ativo</span></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-pen"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>Ana Souza</td>
+                            <td>ana.souza@email.com</td>
+                            <td>Editor</td>
+                            <td><span class="badge ativo">Ativo</span></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-pen"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>Jean Livero</td>
+                            <td>jean.livero@email.com</td>
+                            <td>Editor</td>
+                            <td><span class="badge inativo">Inativo</span></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-pen"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <?php include 'footer.php'; ?>
 </body>
 </html>

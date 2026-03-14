@@ -9,19 +9,7 @@
 </head>
 <body>
     <div class="dashboard-container">
-        <nav>
-            <ul>
-                <li class="inicio"><a href="#">Início</a></li>
-                <li class="projetos"><a href="#">Projetos</a></li>
-                <li class="relatorios"><a href="#">Relatórios</a></li>
-                <li class="config"><a href="#">Configurações</a></li>
-            </ul>
-            <div class="perfil-usuario">
-                <img src="imagens/smiling-young-man.avif" alt="avatar">
-                <span>Jean Livero</span>
-            </div>
-        </nav>
-
+        <?php include 'menu.php'; ?>
         <main>
             <section class="container-cards">
                 <article>
@@ -43,8 +31,8 @@
         </main>            
     
     </div>
-<footer>
-    <p>&copy; <?php echo date('Y'); ?> - Desenvolvido na aula de Web I</p> 
-</footer>
+    
+    <?php include 'footer.php'; ?>
+
 </body>
 </html>

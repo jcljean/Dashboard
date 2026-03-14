@@ -138,8 +138,8 @@ article{
   margin-right: 5px;
 }
 
-.projetos a::before {
-  content: "📁";
+.usuario a::before {
+  content: "👤";
   margin-right: 6px;
 }
 
@@ -189,13 +189,24 @@ tbody tr:hover{
     background-color: #f1f7ff;
 }
 
-btn-icon   {
+.btn-icon   {
     background: none;
     border: none;
     color: #004a8d;
     cursor: pointer;
     font-size: 16px;
 }
+
+.badge{
+    padding: 4px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ativo{ background-color: #d4edda; color: #155724;}
+.inativo{ background-color: #f8d7da; color: #721c24;}
+
 
 .card-form{
     background: white;
@@ -244,4 +255,21 @@ input:focus { border-color: #004a8d; outline: none; box-shadow: 0 0 0 3px rgba(0
 
 .btn-cancel:hover{
     color: red;
+}
+
+.btn-newuser{
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.div-newuser{
+    text-align: right;
+    margin-bottom: 15px;
 }

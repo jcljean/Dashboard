@@ -8,46 +8,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <main>
-        <section class="card-form">
-            
-            <div class="form-header">
-                <h2><i class="fa-solid fa-user-plus"></i> Novo Usuário</h2>
-                <p>Preencha os dados abaixo para registrar um novo acesso.</p>
-            </div>
-            
-            <form action="processa.php" method="POST">
-                <div class="form-group">
-                    <label for="nome">Nome completo</label>
-                    <input type="text" id="nome" name="nome" placeholder="Ex. Jean Carlos Livero" required>
+    <div class="dashboard-container">
+        <?php include 'menu.php'; ?>
+        <main>
+            <section class="card-form">
+                
+                <div class="form-header">
+                    <h2><i class="fa-solid fa-user-plus"></i> Novo Usuário</h2>
+                    <p>Preencha os dados abaixo para registrar um novo acesso.</p>
                 </div>
-                            
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="jean.livero@email.com" required>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group Flex-1" >
-                    <label for="senha">Senha</label>
-                    <input type="password" id="senha" name="senha" required>        
+                
+                <form action="processa.php" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Ex. Jean Carlos Livero" required>
                     </div>
-                    <div class="form-group Flex-1" >
-                        <label for="nivel">Nivel</label>
-                        <select id="nivel" name="nivel">
-                            <option value="1">Usuário</option>
-                            <option value="2">Administrador</option>
-                        </select>
+                                
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="jean.livero@email.com" required>
                     </div>
-                </div>
 
-                <div class="form-actions">
-                    <button type="submit" class="btn-save"><i class="fa-solid fa-floppy-disk"></i></button>
-                    <button type="index.php" class="btn-cancel">Cancelar</button>
-                </div>
-            </form>
+                    <div class="form-row">
+                        <div class="form-group Flex-1" >
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" required>        
+                        </div>
+                        <div class="form-group Flex-1" >
+                            <label for="nivel">Nivel</label>
+                            <select id="nivel" name="nivel">
+                                <option value="1">Usuário</option>
+                                <option value="2">Administrador</option>
+                            </select>
+                        </div>
+                    </div>
 
-        </section>
-    </main>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-save"><i class="fa-solid fa-floppy-disk"></i></button>
+                        <button type="index.php" class="btn-cancel">Cancelar</button>
+                    </div>
+                </form>
+
+            </section>
+        </main>
+    </div>
+     <?php include 'footer.php'; ?>
 </body>
 </html>
