@@ -11,15 +11,14 @@
     <nav>
             <ul>
                 <li class="inicio"><a href="index.php">Início</a></li>
+                <li class="categorias"><a href="categorias.php">Categorias</a></li>
+                <li class="postagens"><a href="#">Postagens</a></li>
                 <li class="usuario"><a href="usuario.php">Usuários</a></li>
-                <li class="relatorios"><a href="#">Relatórios</a></li>
-                <li class="config"><a href="#">Configurações</a></li>
             </ul>
             <div class="perfil-usuario">
                 <img src="imagens/smiling-young-man.avif" alt="avatar">
                 <span>Jean Livero</span>
             </div>
     </nav>
-
 </body>
 </html>
